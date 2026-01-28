@@ -24,16 +24,38 @@
         }
 
         nav {
-            position: fixed; top: 0; left: 0; width: 100%;
-            background: rgba(5, 5, 5, 0.9);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border);
-            z-index: 1000; display: flex;
-            justify-content: space-between; padding: 1rem 5%;
-        }
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(20, 20, 20, 0.95);
+                backdrop-filter: blur(10px);
+                border-bottom: 1px solid var(--border);
+                z-index: 1000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 5%;
+                height: 70px;
+                box-sizing: border-box;
+            }
 
-        nav a { color: var(--text-dim); text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
-        nav a:hover { color: var(--accent); }
+            nav .links {
+                display: flex;
+                align-items: center;
+            }
+
+            nav a {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 0.9rem;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            nav .links a {
+                margin-left: 25px;
+            }
 
         .container { max-width: 800px; margin: 0 auto; }
         
@@ -56,46 +78,39 @@
 <body>
 
 <nav>
-    <a href="index.html" style="font-weight: bold; color: white;">LUKA1S</a>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-    </div>
-</nav>
+                <a href="index.html" class="logo">LUKA1S</a>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="terms-of-services.html">Terms</a>
+                </div>
+            </nav>
 
-<div class="container">
-    <h1>Terms of Service</h1>
-    <div class="last-updated">Last Updated: 28.January.2026 10:46 PM GMT+1</div>
+            <div class="container">
+                <h1>Terms of Service</h1>
+                <div class="last-updated">Last Updated: January 2026</div>
 
-    <section>
-        <h2>1. Intellectual Property & Rights</h2>
-        <div class="tos-card">
-            <h3>Website & Code</h3>
-            <p>I reserve all rights to the code, design, and structure of this website. You may not copy, redistribute, or use this code for your own projects.</p>
-            <h3>Assets & Portfolio</h3>
-            <p>All 3D renders, models, and images displayed on this site are my intellectual property. Unauthorized use, downloading, or re-uploading of these assets will result in a DMCA takedown and reporting to relevant platform moderators.</p>
-        </div>
-    </section>
+                <section>
+                    <h2>1. Intellectual Property & Rights</h2>
+                    <div class="tos-card">
+                        <h3>Website & Code</h3>
+                        <p>I reserve all rights to the code and design. No redistribution allowed.</p>
+                        <h3>Assets & Portfolio</h3>
+                        <p>All renders are my property. Unauthorized use will result in a DMCA.</p>
+                    </div>
+                </section>
 
-    <section>
-        <h2>2. Commissioning Policies</h2>
-        <div class="tos-grid">
-            <div class="tos-card">
-                <h3>Communication</h3>
-                <ul>
-                    <li>All business must be conducted in <strong>English</strong>.</li>
-                    <li>Communication is handled exclusively via <strong>Discord</strong>.</li>
-                    <li>Professionalism is expected; toxicity, harassment, or spam will result in an immediate block and cancellation of the project.</li>
-                </ul>
-            </div>
-
-            <div class="tos-card">
-                <h3>Cancellation & Refunds</h3>
-                <ul>
-                    <li><strong>No Cancellations:</strong> Once a project has started and I have begun modeling, you cannot cancel the order.</li>
-                    <li><strong>No Refunds:</strong> Due to the nature of digital labor, refunds are not provided once the final model is delivered.</li>
-                    <li>If you ghost (disappear) for more than 7 days during a project, the commission will be terminated without a refund.</li>
-                </ul>
+                <section>
+                    <h2>2. Commissioning Policies</h2>
+                    <div class="tos-card">
+                        <h3>Communication</h3>
+                        <p>English only via Discord. Professional conduct is mandatory.</p>
+                    </div>
+                    <div class="tos-card">
+                        <h3>Cancellation</h3>
+                        <p>No cancellations once work starts. No refunds on digital labor.</p>
+                    </div>
+                </section>
             </div>
 
             <div class="tos-card">
